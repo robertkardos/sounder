@@ -1,1 +1,3 @@
-newbranchjs gasfbsdf;nasdg;ansdfasd;fajnsdf;asdf;
+jQuery(document).ready(function($) {
+	
+});
