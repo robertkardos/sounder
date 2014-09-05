@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="Kalacs">
+<html ng-app="Sounder">
 <head>
 	<title>Sounder</title>
+	<script type="text/javascript" src="js/vendor/angular.js"></script>
+	<script type="text/javascript" src="js//app.js"></script>
 </head>
+
 <body>
 	<ul>
 		<li>asdasd</li>
 		<li>asdasd</li>
-		<li>asdasd</li>
-		<li>asdasd</li>
 	</ul>
-	<form>
-		<p>Added function</p>
+	<form ng-controller="FormController">
+		<input type="text" ng-model="name">
+		{{name}}
+		{{clock}}
 	</form>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/vendor/angular.js"></script>
 </body>
 </html>
