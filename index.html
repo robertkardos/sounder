@@ -13,8 +13,8 @@
 	</ul>
 	<form ng-controller="FormController">
 		<input type="text" ng-model="name">
-		{{name}}
-		{{clock}}
+		<p>{{ name | uppercase }}</p>
+		<p>{{ clock | date:"fullDate" }}</p>
 	</form>
 </body>
 </html>
