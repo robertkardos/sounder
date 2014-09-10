@@ -3,18 +3,15 @@
 <head>
 	<title>Sounder</title>
 	<script type="text/javascript" src="js/vendor/angular.js"></script>
-	<script type="text/javascript" src="js//app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
 </head>
 
 <body>
-	<ul>
-		<li>asdasd</li>
-		<li>asdasd</li>
-	</ul>
 	<form ng-controller="FormController">
-		<input type="text" ng-model="name">
-		<p>{{ name | uppercase }}</p>
-		<p>{{ clock | date:"fullDate" }}</p>
+		<input type="text" ng-model="filtertext">
+		<p>{{ strings | filter:isNaN }}</p>
+		<p>{{ clock | date:"HH:mm:ss" }}</p>
 	</form>
 </body>
 </html>
