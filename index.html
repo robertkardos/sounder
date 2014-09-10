@@ -8,10 +8,18 @@
 </head>
 
 <body>
-	<form ng-controller="FormController">
-		<input type="text" ng-model="filtertext">
-		<p>{{ strings | filter:isNaN }}</p>
-		<p>{{ clock | date:"HH:mm:ss" }}</p>
+	<form ng-controller="FormController" name="form" novalidate>
+
+	<input type="email" name="email" value="" placeholder="Email" ng-model="email">
+	<input type="submit" name="submit" value="Submit">
+	<br>
+	{{form.email.$pristine}}
+	{{form.email.$dirty}}
+	{{form.email.$valid}}
+	{{form.email.$invalid}}
 	</form>
+
+	<p>{{ {'name':'value'} | json }}</p>
+	<p>{{ clock | date:"HH:mm:ss" }}</p>
 </body>
 </html>
