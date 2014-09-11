@@ -10,8 +10,8 @@ app.controller('FormController',['$scope', '$filter', function($scope, $filter) 
 
 
 	setInterval(function () {
-		$scope.$apply(updateClock);/*
-		$scope.clock = $filter('date:"fullDate"')(new Date());*/
+		$scope.$apply(updateClock);
+		$scope.clock = new Date();
 	}, 1000);
 	updateClock();
 }]);
